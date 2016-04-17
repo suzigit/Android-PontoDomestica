@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ponto Doméstica</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="time_start_text">Entrada: </string>
+    <string name="time_stop_text">Saída: </string>
+
+    <string name="send_email">Send by E-mail</string>
+
+    <string name="title_activity_settings">Configurações</string>
+    <string name="email_pickup">Digite o email</string>
+
+    <string name="segundos_localizacao_pickup">Segundos de espera para buscar dados de localização</string>
+
+
+
+
+</resources>

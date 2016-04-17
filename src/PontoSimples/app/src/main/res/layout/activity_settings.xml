@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="controledeponto.softwaresimples.com.br.pontosimples.SettingsActivity">
+
+
+    <TextView android:text="E-mail de destino dos dados"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+    android:id="@+id/email_address"
+    android:layout_width="match_parent"
+    android:hint= "@string/email_pickup"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress" />
+
+
+
+    <TextView android:text="Escolha o valor de intervalo a ser descontado automaticamente na totalização de horas trabalhadas em uma marcação de início e fim"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id= "@+id/intervalo">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não descontar intervalo"
+            android:checked="true"
+            android:id="@+id/rbIntervaloSemIntervalo"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30min"
+            android:id="@+id/rbIntervalo30"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60min"
+            android:id="@+id/rbIntervalo60"
+             />
+    </RadioGroup>
+
+    <TextView android:text=""
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView android:text="@string/segundos_localizacao_pickup"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/localization_timeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+
+    <Button
+        android:layout_height="32dp"
+        android:layout_width="32dp"
+        android:text="OK"
+        android:id="@+id/buttonOk"
+        android:background="#ffffffff" />
+
+</LinearLayout>
